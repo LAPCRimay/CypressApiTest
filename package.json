@@ -1,0 +1,23 @@
+{
+  "name": "apitest",
+  "version": "1.0.0",
+  "description": "ejercicio práctico NTT DATA",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec 'cypress/e2e/tests/pruebaPet.test.cy.js' --headed",
+    "testAllure": "cypress run --spec 'cypress/e2e/tests/pruebaPet.test.cy.js' --headed --env allure=true",
+    "allure-report": "allure generate allure-results --clean -o allure-report",
+    "cypress:open": "cypress open --browser chrome"
+  },
+  "keywords": [
+    "cypress",
+    "apis"
+  ],
+  "author": "lorenapadilla",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.37.0",
+    "cypress": "^12.8.1",
+    "cypress-mochawesome-reporter": "^3.3.0"
+  }
+}

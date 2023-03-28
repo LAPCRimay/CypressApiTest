@@ -1,0 +1,39 @@
+{
+  "pet1": {
+    "id": 19930,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "pet1",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "nice"
+      }
+    ],
+    "status": "available"
+  },
+  "petUpdated": {
+    "id": 19930,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "name changed pet",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "nice"
+      }
+    ],
+    "status": "sold"
+  },
+  "status":"sold"
+}
