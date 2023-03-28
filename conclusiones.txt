@@ -1,0 +1,11 @@
+- No existe validación para la creación de una mascota, se envía cualquier id y responde con estado 200, siendo que en 
+algunos casos el registro no fue añadido. Se probó con el código 0.
+- Es posible enviar on json vacío para la creación y actualización de la mascota, que igualmente retorna un código 200.
+- Se envía a crear una mascota con un id existente y no se muestra un mensaje indicando que dicho registro ya existe, sino 
+que responde con código 200.
+- Se envía a actualizar una mascota que no existe y la respuesta es 200.
+- En la documentación el campo id,name y photoUrls, son obligatorios, sin embargo si se envía a crear/actualizar una mascota sin ellos, no da error.
+- Cuando se consulta por el status se muestran algunas mascotas, si se toma un id cualquiera y se consulta por ese campo
+en algunas ocasiones responde con "Pet not found" o en ocasiones un NumberFormatException porque por alguna razón lo toma como string.
+- Cuando responde con NumberFormatException el código de error es 404, lo que según la documentación corresponde a Pet not found.
+- El manejo de errores de la API no es correcto.

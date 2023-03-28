@@ -8,6 +8,8 @@ Pruebas a API PetStore
 5. En la terminal de VS Code ejecutar:
  a. npm i
  b. npm run testAllure
+ c. npm run allure-report
 Se ejecutan las pruebas generando:
  a. Reporte (cypressApiTest\cypress\reports\html)
  b. Video (cypressApiTest\cypress\videos)
+ c. JSON de mascotas con status sold (cypressApiTest\CypressApiTest\cypress\fixtures\endResult.json)
